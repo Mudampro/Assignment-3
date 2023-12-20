@@ -1,0 +1,193 @@
+body {
+  background-color: rgb(240, 244, 244);
+  font-size: 16px;
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+nav {
+  display: inline;
+  position: absolute;
+  right: 40px;
+}
+a {
+  margin-inline-end: 35px;
+  text-decoration: inherit;
+  color: rgb(0, 0, 0);
+  font-weight: lighter;
+  cursor: pointer;
+  transition: 0.5s;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+a:active {
+  opacity: 0.5;
+}
+a:nth-last-child(1) {
+  padding: 5px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+hr {
+  width: 90%;
+  margin-inline-start: 5%;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+.logo {
+  max-width: 10%;
+  height: auto;
+  margin-left: 60px;
+}
+main {
+  display: flex;
+  width: 900px;
+  margin-block: 30px;
+  margin-inline: auto;
+  > section:first-of-type {
+    flex-grow: 1;
+    max-width: 580px;
+    padding: 30px;
+    background-color: hsla(0, 0%, 100%, 1);
+    box-shadow: 5px 5px 5px rgb(237, 234, 234);
+  }
+  > section:first-of-type > form > h1:first-of-type {
+    width: 161px;
+    text-shadow: 200px 200px 200px;
+  }
+  > section:first-of-type > form > hr {
+    opacity: 0.5;
+    margin-block: 30px;
+  }
+  > section:first-of-type > form > h1.info > span {
+    margin-inline-end: 10px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid hsla(204, 84%, 41%, 1);
+    text-align: center;
+    margin-inline-end: 8px;
+    font-size: small;
+  }
+  > section:first-of-type > form > div:first-of-type {
+    display: flex;
+    gap: 16px;
+  }
+  > section:first-of-type > form > button {
+    width: 400px;
+    height: 52px;
+    background-color: rgb(3, 172, 81);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+  }
+  section:first-of-type > form > button:hover {
+    background-color: rgb(49, 209, 121);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 1s;
+  }
+  section:first-of-type > form > button:active {
+    opacity: 0.4;
+  }
+  > section:first-of-type > form > p:first-of-type {
+    margin-left: 32.5px;
+    margin-top: 30px;
+  }
+  > section:first-of-type > form > p:first-of-type > #question {
+    margin-inline-end: 10px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid hsla(204, 84%, 41%, 1);
+    text-align: center;
+    margin-inline-end: 8px;
+    font-size: small;
+  }
+  > section:first-of-type > form > p:first-of-type > #contact {
+    border-bottom: 1px solid black;
+    padding-inline-start: 0px;
+    padding-inline-end: 50px;
+  }
+  > section:first-of-type > form > p:last-of-type {
+    width: max-content;
+    margin-left: 245.5px;
+    background-color: hsla(211, 14%, 39%, 1);
+    padding-inline: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+  }
+  > section:first-of-type > form > p:last-of-type > span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  > section:nth-child(2) {
+    max-width: 312px;
+    background-color: hsla(204, 84%, 41%, 1);
+    padding-inline: 30px;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(237, 234, 234);
+  }
+  > section:nth-child(2) > code > span {
+    font-size: 30px;
+    margin-block-end: 16px;
+  }
+  > section:nth-child(2) > div > p {
+    margin-top: 20px;
+  }
+  > section:nth-child(2) > div > p > span {
+    margin-inline-end: 10px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid white;
+    text-align: center;
+    margin-inline-end: 8px;
+    font-size: small;
+  }
+  > section:nth-child(2) > p {
+    margin-top: 50px;
+  }
+  > section:nth-child(2) > a {
+    color: inherit;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  > section:nth-child(2) > hr {
+    max-width: 229px;
+    margin-block: 30px;
+  }
+}
+* > input {
+  border: none;
+  border-radius: 5px;
+  background-color: hsla(216, 16%, 94%, 1);
+  &::placeholder {
+    padding-inline-start: 16px;
+  }
+  &[type="text"] {
+    width: 200px;
+    height: 30px;
+  }
+  &[type="email"] {
+    width: 300px;
+    height: 30px;
+  }
+  &#creditcard {
+    width: 420px;
+    height: 30px;
+  }
+}
+footer {
+  margin-left: 38%;
+  width: max-content;
+  margin-top: 30px;
+}
+footer > span {
+  font-weight: bolder;
+  margin: 10px;
+}
